@@ -2,6 +2,8 @@
   Microservice Architectural design patterns like Domain Driven Design and CQRS(Command Query Responsibility Separation) can be used with event sourcing techniques to built a separation of read and write models.
   In a CQRS context, one benefit of Event Sourcing is that the same events can be used to notify other components — in particular, to notify the read model. The read model uses the events to create a snapshot of the current state, which is more efficient for queries. However, Event Sourcing adds complexity to the design
   
+ Event Sourcing is ana architectural design in which the state of the application is is determined by the sequence of events. if in case some issue occured, than we can re run the events to rollback the state of the system.
+ 
  **Requirements:**
  1. Java 8 or higher
  2. Spring Boot
