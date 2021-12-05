@@ -20,7 +20,8 @@ For the  above diagram, the description are as follows:
 <br/>
 **Query Separation :**  When ever a user make GET request , the dispatcher servlet will route to the specific controller. Controller will call the AXON Query Gateway which will hold the data that need to be push to the event pipeline. Once the AXON Query Gateway send the data , Projection will send the reques then publish it to the Event Sourceing pipeline (in our case it Axon Server). Once the Event are pushed , the Query Event handler which keeps listen to the Event Source pipeline and once the request is received will read the data from the persistent storage.
   
-  **Axon Dahsboard**
+ ### Axon Dahsboard
+  **Command :**
   ![image](https://user-images.githubusercontent.com/861835/144734579-21674b9c-404b-434a-b417-e569504a7286.png)
 <br/>
    When inserting the record to database, the event stored in the AXON Server can be seen in the dashboard:
@@ -30,6 +31,10 @@ For the  above diagram, the description are as follows:
   To see specific Identifier ID using Axon Dashboard:
   ![image](https://user-images.githubusercontent.com/861835/144734647-e050dd88-d26e-4649-8f22-81119eec71d0.png)
 
+**Query :**
+  <br/>
+  Whenever a query request is made , it will be captured in the Axon Dashboard:
+  ![image](https://user-images.githubusercontent.com/861835/144734710-b7625085-6a14-4c06-8db0-e6c1a03e2f43.png)
 
 
   
