@@ -1,0 +1,24 @@
+2021-12-04 13:47:59 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Delete FROM PRODUCT where PRODUCT_ID=''de55bdf1-22e1-4908-b006-51cd4ed705f6[*]"""; SQL statement:
+Delete FROM PRODUCT where PRODUCT_ID=''de55bdf1-22e1-4908-b006-51cd4ed705f6" [42000-200]
+2021-12-04 13:48:05 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "PRODUCT[*]"; expected "PREPARE"; SQL statement:
+PRODUCT [42001-200]
+2021-12-04 13:49:15 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE FROM PRODUCT WHERE PRODUCT_ID LIKE '%de55bdf1-22e1-4908-b006-51cd4ed705f6%'
+
+
+SELECT[*] * FROM PRODUCT"; SQL statement:
+delete from PRODUCT Where PRODUCT_ID like '%de55bdf1-22e1-4908-b006-51cd4ed705f6%'
+
+
+select * from PRODUCT [42000-200]
+2021-12-04 13:49:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE FROM PRODUCT WHERE PRODUCT_ID LIKE '%075f2d50-2d22-41ff-9830-c800ccd64469%'
+
+
+SELECT[*] * FROM PRODUCT"; SQL statement:
+delete from PRODUCT Where PRODUCT_ID like '%075f2d50-2d22-41ff-9830-c800ccd64469%'
+
+
+select * from PRODUCT [42000-200]
